@@ -89,6 +89,19 @@ namespace ProjetoDotNeT
             return PI * Math.Pow(pRaio, 2);
             }
        }
+
+
+       internal class Program
+       {
+            static void Main(string[] args)
+        {
+            Pessoa pessoa1 = new Pessoa("João");
+            Pessoa pessoa2 = new Pessoa("Pedro");
+            pessoa1.ImprimeNome();
+            pessoa2.ImprimeNome();
+        }
+
+       }
        /* public static bool ReadKey { get; private set; }
 
         static void Main(string[] args)
