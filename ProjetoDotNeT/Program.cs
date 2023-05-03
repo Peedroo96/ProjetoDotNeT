@@ -55,8 +55,20 @@ namespace ProjetoDotNeT
             }
         }
     }
-    internal class Program
-    {   
+    
+       internal class Program
+       {
+            static void Main(string[] args)
+        {
+            Pessoa pessoa1 = new Pessoa("João");
+            Pessoa pessoa2 = new Pessoa("Pedro");
+            pessoa1.ImprimeNome();
+            pessoa2.ImprimeNome();
+        }
+
+       }
+
+      
 
         // Modificador static (estático ou fixo) Ele é sempre usado após o modificador de acesso
 
@@ -91,18 +103,11 @@ namespace ProjetoDotNeT
        }
 
 
-       internal class Program
-       {
-            static void Main(string[] args)
-        {
-            Pessoa pessoa1 = new Pessoa("João");
-            Pessoa pessoa2 = new Pessoa("Pedro");
-            pessoa1.ImprimeNome();
-            pessoa2.ImprimeNome();
-        }
-
-       }
        /* public static bool ReadKey { get; private set; }
+=======
+    {
+        public static bool ReadKey { get; private set; }
+>>>>>>> 6e61dc6cd4175e978a37f8cafded3a5793b2ad06
 
         static void Main(string[] args)
         {
@@ -118,6 +123,5 @@ namespace ProjetoDotNeT
             valorSacado = contaDoPedro.Sacar(10, "12345");
 
             Console.ReadKey();
-        }*/
-    }
 
+        }*/
